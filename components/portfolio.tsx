@@ -9,8 +9,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
-import { LinkedinIcon, TwitterIcon, GithubIcon/* , WhatsappIcon */, DownloadIcon, SunIcon, MoonIcon} from "lucide-react"
-
+import { LinkedinIcon, TwitterIcon, GithubIcon/* , WhatsappIcon */, Menu, DownloadIcon, SunIcon, MoonIcon} from "lucide-react"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 export function PortfolioComponent() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
@@ -30,7 +30,7 @@ export function PortfolioComponent() {
         {/*<div className={"absolute inset-0  bg-cover bg-center w-full h-full z-10 opacity-20"}> </div>*/}
         <nav className="relative max-w-6xl mx-auto z-10 flex justify-between items-center mb-16">
           <a href="#" className="text-xl font-bold">Hamza benfaddoul</a>
-          <div className="flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <a href="#about" className="text-sm hover:underline">About</a>
             <a href="#skill" className="text-sm hover:underline">Skills</a>
             <a href="#portfolio" className="text-sm hover:underline">Portfolio</a>
@@ -45,6 +45,33 @@ export function PortfolioComponent() {
               <MoonIcon className="w-4 h-4" />
             </div>
           </div>
+        <Sheet>
+
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="" className="w-[300px] sm:w-[400px] bg-teal-800">
+
+            <nav className="flex flex-col space-y-4">
+
+          <div className="flex items-center space-x-2">
+            <SunIcon className="w-4 h-4" />
+            <Switch
+              checked={theme === 'dark'}
+              onCheckedChange={toggleTheme}
+              aria-label="Toggle dark mode"
+            />
+            <MoonIcon className="w-4 h-4" />
+        </div>
+                <a href="#about" className="text-sm hover:underline">About</a>
+                <a href="#skill" className="text-sm hover:underline">Skills</a>
+                <a href="#portfolio" className="text-sm hover:underline">Portfolio</a>
+                <a href="#contact" className="text-sm hover:underline">Contact</a>
+            </nav>
+          </SheetContent>
+        </Sheet>
         </nav>
       </header>
 
@@ -70,7 +97,7 @@ export function PortfolioComponent() {
           </div>
         </Card>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" id="about">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8" id="about">
           <section>
             <h2 className="text-2xl font-semibold mb-4">About</h2>
             <Card className="p-4 h-full bg-white dark:bg-gray-800">
