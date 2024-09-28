@@ -75,7 +75,7 @@ export function PortfolioComponent() {
             <h2 className="text-2xl font-semibold mb-4">About</h2>
             <Card className="p-4 h-full bg-white dark:bg-gray-800">
               <CardContent>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Hello! I am Hamza Benfaddoul, Web Developer and software engineer student at 1337. I am passionate about technology and I am always looking for new ways to learn and grow. I enjoy working with others to solve problems, and I'm confident that I have the skills necessary to be successful in this field.</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Hello! I am Hamza Benfaddoul, Web Developer and software engineer student at 1337. I am passionate about technology and I am always looking for new ways to learn and grow. I enjoy working with others to solve problems, and I&apos;m confident that I have the skills necessary to be successful in this field.</p>
                 <a href="#" className="text-teal-600 dark:text-teal-400 text-sm mt-2 inline-block">Learn More</a>
               </CardContent>
             </Card>
