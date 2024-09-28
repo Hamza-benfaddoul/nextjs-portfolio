@@ -52,7 +52,7 @@ export function PortfolioComponent() {
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="" className="w-[300px] sm:w-[400px] bg-teal-800">
+          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-teal-800">
 
             <nav className="flex flex-col space-y-4">
 
