@@ -26,7 +26,7 @@ export function PortfolioComponent() {
 
   return (
     <div className="min-h-screen  bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <header className="bg-teal-600 text-white p-6 relative h-96">
+      <header className="bg-teal-600 text-white p-6 relative h-64">
         {/*<div className={"absolute inset-0  bg-cover bg-center w-full h-full z-10 opacity-20"}> </div>*/}
         <nav className="relative max-w-6xl mx-auto z-10 flex justify-between items-center mb-16">
           <a href="#" className="text-xl font-bold">Hamza benfaddoul</a>
